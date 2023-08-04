@@ -49,7 +49,7 @@ async function cale() {
     else {
         var avg_speed = 1000 * (all_down_a) / (new Date().getTime() - start_time)
 
-        document.title = '网络面板'
+        document.title = '流量消失器'
         now_speed = 0
         document.getElementById("speed").innerText = show((avg_speed), ['B/s', 'KB/s', 'MB/s', 'GB/s', 'TB/s', 'PB/s'], [0, 0, 1, 2, 2, 2]);
         document.getElementById("mbps").innerText = show((avg_speed) * 8, ['Bps', 'Kbps', 'Mbps', 'Gbps', 'Tbps', 'Pbps'], [0, 0, 0, 2, 2, 2]);
@@ -260,7 +260,7 @@ document.addEventListener("visibilitychange", function() {
     }
     if (string === 'visible') {
         visibl = true
-        document.title = "网络面板"
+        document.title = "流量消失器"
     }
 });
 
